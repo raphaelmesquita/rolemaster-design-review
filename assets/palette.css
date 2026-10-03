@@ -1,0 +1,351 @@
+/* Color authority: legacy print defaults, followed by screen-only Atlas themes. */
+:root {
+
+  /* Parchment surfaces */
+  --parchment: #f1e9d8;
+  --card: #faf6ec;
+  --card-active: #fdf9ef;
+  --surface-head: #efe6d0;
+  --surface-soft: #f5eedd;
+  --surface-open: #f9f1e0;
+
+  /* Borders (light) */
+  --border: #d8cbae;
+  --border-subtle: #ddd0b2;
+  --border-line: #e9dfc8;
+  --border-control: #d0c3a4;
+
+  /* Dark chrome */
+  --chrome: #1e1a14;
+  --chrome-card: #26211a;
+  --chrome-border: #3a3428;
+  --chrome-border-2: #5b5138;
+  --warn-bg-dark: #241d13;
+  --warn-border-dark: #5b4a26;
+
+  /* Ink (on light) */
+  --ink: #2b2419;
+  --ink-body: #4c4232;
+  --ink-2: #6f6350;
+  --ink-3: #74664f;
+
+  /* Text (on dark) */
+  --cream: #efe6d2;
+  --cream-2: #b7ac96;
+  --cream-3: #948a77;
+
+  /* Gold — active states only */
+  --gold: #c8963e;
+  --sync-warning-ink: var(--gold);
+  --on-gold: #1c1508;
+  --gold-bright: #d8b25f;
+  --gold-ink: #8a6a24;
+  --gold-eyebrow: #a5854a;
+  --gold-chip-bg: #f3e3c2;
+  --gold-chip-ink: #7a5416;
+  --gold-ring: rgba(200, 150, 62, 0.25);
+  --gold-hover: #bd8a34;  /* darker gold for pressed/hover on gold surfaces */
+
+  /* Attention / error */
+  --warn-ink: #8f4a26;
+  --warn-border: #d9a583;
+  --warn-bg: #f3ded1;
+  --warn-on-dark: #d99a7d;
+  --warn-border-dark2:#7a4a35;
+  --over-budget: #b0512e;
+
+  /* Success */
+  --ok: #3f6b3f;
+  --ok-on-dark: #9fbf66;
+  --ok-bg: #e6eee9;
+
+  /* Skill class badges (bg / border / ink) */
+  --class-e-bg: #e3ecd9; --class-e-border: #a8bd8d; --class-e-ink: #3f5c2e;
+  --class-o-bg: #f3e3c2; --class-o-border: #d3ae66; --class-o-ink: #7a5416;
+  --class-r-bg: #f3d8d1; --class-r-border: #d99483; --class-r-ink: #8f3a26;
+  --class-n-bg: #e9e2d0; --class-n-border: #cfc3a5; --class-n-ink: #5c523d;
+
+  /* Neutral pill chips on parchment (detail cards, loadout grants) */
+  --chip-bg: #efe3c6;
+  --chip-ink: #5c523d;
+
+  /* Prototype-exact supporting values */
+  --paper: #fff;     /* white input/value boxes on parchment */
+  --border-line-2: #e4d8bc;  /* lighter table/group separators */
+  --warn-on-dark-strong: #e59b82;  /* strong warn values on dark commit bars */
+  --stepper-ink: #171309;  /* ink on gold/active stepper orbs */
+  --avatar-bg: #2b2519;  /* avatar circles on dark chrome */
+  --on-gold-2: #3b2a10;  /* secondary text on gold surfaces */
+
+  /* Stepper node states (exact values from the approved prototype) */
+  --stepper-line: #453d2c;
+  --stepper-node-bg: #26221a;
+  --stepper-active-bg: #f1e5c8;
+  --stepper-locked-bg: #1d1a15;
+  --stepper-locked-border: #4a4232;
+  --stepper-locked-ink: #6d6553;
+
+  /* Project aliases derived from the canonical tokens */
+  --surface: var(--parchment);
+  --surface-panel: var(--card);
+  --surface-rail: var(--chrome);
+  --primary: var(--gold);
+  --primary-dim: var(--gold-eyebrow);
+  --muted: var(--ink-2);
+  --line: var(--border);
+  --supported: var(--ok);
+  --supported-bg: var(--class-e-bg);
+  --partial: var(--warn-ink);
+  --partial-bg: var(--warn-bg);
+  --blocked: var(--over-budget);
+  --blocked-bg: var(--warn-bg);
+  --shadow-card: 0 1px 3px rgba(43,36,25,0.08);
+  --shadow-soft: 0 1px 3px rgba(43,36,25,0.06);
+  --shadow-drawer: -8px 0 20px rgba(43,36,25,0.08);
+
+  /* Atlas screen palette primitives. These values remain in the root token
+     block so the print-compatible Parchment aliases above stay untouched. */
+  --atlas-light-work-canvas: #f0f0f2;
+  --atlas-light-panel: #fdfcfa;
+  --atlas-light-soft: #e8e8ed;
+  --atlas-light-selected: #e6e8f5;
+  --atlas-light-ink: #292b36;
+  --atlas-light-secondary: #626575;
+  --atlas-light-border: #d3d4de;
+  --atlas-light-accent: #4b55a0;
+  --atlas-light-accent-text: #ffffff;
+  --atlas-light-nav: #252a40;
+  --atlas-light-nav-text: #f4f3fa;
+  --atlas-light-nav-muted: #c1c5da;
+  --atlas-light-attention: #85521e;
+  --atlas-light-attention-bg:#f5eadb;
+
+  --atlas-dark-work-canvas: #1c1e25;
+  --atlas-dark-panel: #252832;
+  --atlas-dark-soft: #2e323e;
+  --atlas-dark-selected: #343c58;
+  --atlas-dark-ink: #eeeef5;
+  --atlas-dark-secondary: #b3b7c9;
+  --atlas-dark-border: #454b5e;
+  --atlas-dark-accent: #b3bcf3;
+  --atlas-dark-accent-text: #1e2649;
+  --atlas-dark-nav: #161820;
+  --atlas-dark-nav-text: #eeeef5;
+  --atlas-dark-nav-muted: #b3b7c9;
+  --atlas-dark-attention: #edc28f;
+  --atlas-dark-attention-bg: #40362b;
+  --atlas-light-success: #38634f;
+  --atlas-light-success-bg: #e6eee9;
+  --atlas-light-error: #a03949;
+  --atlas-light-error-bg: #f7e7ea;
+  --atlas-dark-success: #a5cdb7;
+  --atlas-dark-success-bg: #293b34;
+  --atlas-dark-error: #efadb7;
+  --atlas-dark-error-bg: #442e36;
+  /* Signed worktable totals: the success/error hues mixed toward ink (60/40
+     light, 50/50 dark) so dense primary numerals keep 7:1 on panel and
+     selected rows. */
+  --atlas-light-total-pos: #324d45;
+  --atlas-light-total-neg: #703341;
+  --atlas-dark-total-pos: #caded6;
+  --atlas-dark-total-neg: #eecdd6;
+  --shadow-anchored: 0 -6px 14px rgba(24, 18, 10, 0.5);
+  --overlay-scrim: rgba(24, 18, 10, 0.55);
+  --shadow-modal: 0 18px 48px rgba(24, 18, 10, 0.35);
+  --shadow-menu: 0 10px 28px rgba(0, 0, 0, 0.45);
+}
+
+@media screen {
+  :root[data-theme="light"] {
+    --parchment: var(--atlas-light-work-canvas);
+    --card: var(--atlas-light-panel);
+    --card-active: var(--atlas-light-selected);
+    --surface-head: var(--atlas-light-soft);
+    --surface-soft: var(--atlas-light-soft);
+    --surface-open: var(--atlas-light-attention-bg);
+    --border: var(--atlas-light-border);
+    --border-subtle: var(--atlas-light-border);
+    --border-line: var(--atlas-light-border);
+    --border-line-2: var(--atlas-light-border);
+    --border-control: var(--atlas-light-border);
+    --ink: var(--atlas-light-ink);
+    --ink-body: var(--atlas-light-ink);
+    --ink-2: var(--atlas-light-secondary);
+    --ink-3: var(--atlas-light-secondary);
+    --chrome: var(--atlas-light-nav);
+    --chrome-card: var(--atlas-light-nav);
+    --chrome-border: var(--atlas-light-border);
+    --chrome-border-2: var(--atlas-light-secondary);
+    --cream: var(--atlas-light-nav-text);
+    --cream-2: var(--atlas-light-nav-muted);
+    --cream-3: var(--atlas-light-nav-muted);
+    --gold: var(--atlas-light-accent);
+    --sync-warning-ink: var(--atlas-dark-accent);
+    --gold-bright: var(--atlas-light-nav-text);
+    --gold-ink: var(--atlas-light-accent);
+    --gold-eyebrow: var(--atlas-light-accent);
+    --gold-chip-bg: var(--atlas-light-selected);
+    --gold-chip-ink: var(--atlas-light-accent);
+    --gold-ring: color-mix(in srgb, var(--atlas-light-accent) 25%, transparent);
+    --gold-hover: color-mix(in srgb, var(--atlas-light-accent) 84%, var(--atlas-light-ink));
+    --on-gold: var(--atlas-light-accent-text);
+    --warn-ink: var(--atlas-light-attention);
+    --warn-bg: var(--atlas-light-attention-bg);
+    --warn-border: var(--atlas-light-attention);
+    --over-budget: var(--atlas-light-error);
+    --ok: var(--atlas-light-success);
+    --ok-bg: var(--atlas-light-success-bg);
+    --ok-on-dark: var(--atlas-dark-success);
+    --total-pos: var(--atlas-light-total-pos);
+    --total-neg: var(--atlas-light-total-neg);
+    --paper: var(--atlas-light-panel);
+    --chip-bg: var(--atlas-light-soft);
+    --chip-ink: var(--atlas-light-ink);
+    --avatar-bg: var(--atlas-light-nav);
+    --stepper-line: var(--atlas-light-secondary);
+    --stepper-node-bg: var(--atlas-light-nav);
+    --stepper-active-bg: var(--atlas-light-selected);
+    --stepper-locked-bg: var(--atlas-light-nav);
+    --stepper-locked-border: var(--atlas-light-secondary);
+    --stepper-locked-ink: var(--atlas-light-nav-muted);
+    color-scheme: light;
+    --warn-bg-dark: var(--atlas-light-attention-bg);
+    --warn-border-dark: var(--atlas-light-attention);
+    --warn-border-dark2: var(--atlas-light-attention);
+    --warn-on-dark: var(--atlas-dark-attention);
+    --warn-on-dark-strong: var(--atlas-dark-attention);
+    --on-gold-2: var(--atlas-light-accent-text);
+    --stepper-ink: var(--atlas-light-ink);
+    --class-e-bg: var(--atlas-light-success-bg);
+    --class-e-border: var(--atlas-light-success);
+    --class-e-ink: var(--atlas-light-success);
+    --class-o-bg: var(--atlas-light-selected);
+    --class-o-border: var(--atlas-light-accent);
+    --class-o-ink: var(--atlas-light-accent);
+    --class-r-bg: var(--atlas-light-error-bg);
+    --class-r-border: var(--atlas-light-error);
+    --class-r-ink: var(--atlas-light-error);
+    --class-n-bg: var(--atlas-light-soft);
+    --class-n-border: var(--atlas-light-border);
+    --class-n-ink: var(--atlas-light-secondary);
+    --shadow-card: 0 1px 3px color-mix(in srgb, var(--atlas-light-ink) 8%, transparent);
+    --shadow-soft: 0 1px 3px color-mix(in srgb, var(--atlas-light-ink) 6%, transparent);
+    --shadow-drawer: -8px 0 20px color-mix(in srgb, var(--atlas-light-nav) 16%, transparent);
+    --shadow-anchored: 0 -6px 14px color-mix(in srgb, var(--atlas-light-nav) 50%, transparent);
+    --overlay-scrim: color-mix(in srgb, var(--atlas-light-nav) 55%, transparent);
+    --shadow-modal: 0 18px 48px color-mix(in srgb, var(--atlas-light-nav) 35%, transparent);
+    --shadow-menu: 0 10px 28px color-mix(in srgb, var(--atlas-light-nav) 45%, transparent);
+  }
+
+  :root[data-theme="dark"] {
+    --parchment: var(--atlas-dark-work-canvas);
+    --card: var(--atlas-dark-panel);
+    --card-active: var(--atlas-dark-selected);
+    --surface-head: var(--atlas-dark-soft);
+    --surface-soft: var(--atlas-dark-soft);
+    --surface-open: var(--atlas-dark-attention-bg);
+    --border: var(--atlas-dark-border);
+    --border-subtle: var(--atlas-dark-border);
+    --border-line: var(--atlas-dark-border);
+    --border-line-2: var(--atlas-dark-border);
+    --border-control: var(--atlas-dark-border);
+    --ink: var(--atlas-dark-ink);
+    --ink-body: var(--atlas-dark-ink);
+    --ink-2: var(--atlas-dark-secondary);
+    --ink-3: var(--atlas-dark-secondary);
+    --chrome: var(--atlas-dark-nav);
+    --chrome-card: var(--atlas-dark-panel);
+    --chrome-border: var(--atlas-dark-border);
+    --chrome-border-2: var(--atlas-dark-secondary);
+    --cream: var(--atlas-dark-nav-text);
+    --cream-2: var(--atlas-dark-nav-muted);
+    --cream-3: var(--atlas-dark-nav-muted);
+    --gold: var(--atlas-dark-accent);
+    --sync-warning-ink: var(--atlas-dark-accent);
+    --gold-bright: var(--atlas-dark-accent);
+    --gold-ink: var(--atlas-dark-accent);
+    --gold-eyebrow: var(--atlas-dark-accent);
+    --gold-chip-bg: var(--atlas-dark-selected);
+    --gold-chip-ink: var(--atlas-dark-accent);
+    --gold-ring: color-mix(in srgb, var(--atlas-dark-accent) 30%, transparent);
+    --gold-hover: color-mix(in srgb, var(--atlas-dark-accent) 84%, var(--atlas-dark-ink));
+    --on-gold: var(--atlas-dark-accent-text);
+    --warn-ink: var(--atlas-dark-attention);
+    --warn-bg: var(--atlas-dark-attention-bg);
+    --warn-border: var(--atlas-dark-attention);
+    --warn-on-dark: var(--atlas-dark-attention);
+    --warn-on-dark-strong: var(--atlas-dark-attention);
+    --over-budget: var(--atlas-dark-error);
+    --ok: var(--atlas-dark-success);
+    --ok-bg: var(--atlas-dark-success-bg);
+    --ok-on-dark: var(--atlas-dark-success);
+    --total-pos: var(--atlas-dark-total-pos);
+    --total-neg: var(--atlas-dark-total-neg);
+    --paper: var(--atlas-dark-panel);
+    --chip-bg: var(--atlas-dark-soft);
+    --chip-ink: var(--atlas-dark-ink);
+    --avatar-bg: var(--atlas-dark-nav);
+    --stepper-line: var(--atlas-dark-border);
+    --stepper-node-bg: var(--atlas-dark-nav);
+    --stepper-active-bg: var(--atlas-dark-selected);
+    --stepper-locked-bg: var(--atlas-dark-nav);
+    --stepper-locked-border: var(--atlas-dark-border);
+    --stepper-locked-ink: var(--atlas-dark-secondary);
+    color-scheme: dark;
+    --warn-bg-dark: var(--atlas-dark-attention-bg);
+    --warn-border-dark: var(--atlas-dark-attention);
+    --warn-border-dark2: var(--atlas-dark-attention);
+    --on-gold-2: var(--atlas-dark-accent-text);
+    --stepper-ink: var(--atlas-dark-ink);
+    --class-e-bg: var(--atlas-dark-success-bg);
+    --class-e-border: var(--atlas-dark-success);
+    --class-e-ink: var(--atlas-dark-success);
+    --class-o-bg: var(--atlas-dark-selected);
+    --class-o-border: var(--atlas-dark-accent);
+    --class-o-ink: var(--atlas-dark-accent);
+    --class-r-bg: var(--atlas-dark-error-bg);
+    --class-r-border: var(--atlas-dark-error);
+    --class-r-ink: var(--atlas-dark-error);
+    --class-n-bg: var(--atlas-dark-soft);
+    --class-n-border: var(--atlas-dark-border);
+    --class-n-ink: var(--atlas-dark-secondary);
+    --shadow-card: 0 1px 3px color-mix(in srgb, var(--atlas-dark-ink) 8%, transparent);
+    --shadow-soft: 0 1px 3px color-mix(in srgb, var(--atlas-dark-ink) 6%, transparent);
+    --shadow-drawer: -8px 0 20px color-mix(in srgb, var(--atlas-dark-nav) 16%, transparent);
+    --shadow-anchored: 0 -6px 14px color-mix(in srgb, var(--atlas-dark-nav) 50%, transparent);
+    --overlay-scrim: color-mix(in srgb, var(--atlas-dark-nav) 55%, transparent);
+    --shadow-modal: 0 18px 48px color-mix(in srgb, var(--atlas-dark-nav) 35%, transparent);
+    --shadow-menu: 0 10px 28px color-mix(in srgb, var(--atlas-dark-nav) 45%, transparent);
+  }
+
+  .builder-side {
+    --cream: var(--ink);
+    --cream-2: var(--ink-2);
+    --cream-3: var(--ink-3);
+    --chrome: var(--card);
+    --chrome-card: var(--surface-soft);
+    --chrome-border: var(--border);
+    --chrome-border-2: var(--border-control);
+    --gold-bright: var(--gold);
+    --avatar-bg: var(--surface-soft);
+  }
+}
+
+/* Phones have no status row: the step's commit bar sits in the light step
+   heading, so its chrome tokens resolve to the work-canvas palette there. */
+@media screen and (max-width: 767px) {
+  .step-context-band {
+    --cream: var(--ink);
+    --cream-2: var(--ink-2);
+    --cream-3: var(--ink-3);
+    --chrome: var(--card);
+    --chrome-card: var(--surface-soft);
+    --chrome-border: var(--border);
+    --chrome-border-2: var(--border-control);
+    --gold-bright: var(--ink);
+    --warn-on-dark: var(--warn-ink);
+    --warn-on-dark-strong: var(--warn-ink);
+    --ok-on-dark: var(--ok);
+    --stepper-locked-ink: var(--ink-2);
+  }
+}

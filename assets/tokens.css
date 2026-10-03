@@ -1,0 +1,42 @@
+@import "./palette.css";
+
+/* Non-color foundation settings. */
+:root {
+  --atlas-combat-authoring-measure: 820px;
+  --atlas-decision-reading-measure: 72ch;
+  --atlas-control-target: 44px;
+  --atlas-worktable-measure: 88rem;
+  --atlas-worktable-name-measure: 20rem;
+  --atlas-inventory-min-height: 28rem;
+  --atlas-inventory-quantity-measure: 6ch;
+
+  /* Atlas craft scale — docs/design/design-system.md#atlas-craft-scale-decided-2026-09-30.
+     Shell geometry uses --chrome-h/--stepper-h/--status-h/--nav-h/--rail-w/--gutter; the
+     remaining --atlas-* measures above stay until their surface tickets migrate them. */
+  --font-display: "Literata", Georgia, "Times New Roman", serif;
+  --font-ui: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --t-12: 12px; --t-13: 13px; --t-14: 14px; --t-16: 16px; --t-20: 20px; --t-28: 28px;
+  --lh-tight: 1.25; --lh-body: 1.5;
+  --s-1: 4px; --s-2: 8px; --s-3: 12px; --s-4: 16px; --s-5: 24px; --s-6: 32px;
+  --r-ctl: 4px; --r-panel: 8px;
+  --ctl-sm: 32px; --ctl-md: 40px; --hit-min: 44px;
+  --row: 40px; --row-group: 28px;
+  --chrome-h: 48px; --stepper-h: 40px; --status-h: 44px; --nav-h: 60px;
+  --rail-w: 320px; --gutter: 24px;
+
+  color-scheme: light;
+  font-family: "Inter", system-ui, sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@media screen and (min-width: 1900px) {
+  :root { --t-12: 13px; --t-13: 14px; --t-14: 15px; --t-16: 17px; --t-20: 22px; --t-28: 30px; --row: 42px; --rail-w: 400px; --gutter: 32px; }
+}
+
+@media screen and (max-width: 767px) {
+  :root { --t-13: 14px; --t-14: 15px; --t-28: 26px; --row: 52px; --gutter: 16px; }
+}
